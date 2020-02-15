@@ -29,5 +29,3 @@ suppress gen_id 119, sig_id 33
 #(portscan) UDP Filtered Portscan
 suppress gen_id 122, sig_id 21
 
-#(http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE
-suppress gen_id 120, sig_id 3
