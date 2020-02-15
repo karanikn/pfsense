@@ -1,3 +1,11 @@
+## Snort Suppression List Content on pfSense
+## by Nikolaos Karanikolas
+#
+## This list is a represents a compromise between security and usability.
+## February 2020 
+## Correction for Webserfing & OpenVPN 
+
+
 #(http_inspect) DOUBLE DECODING ATTACK
 suppress gen_id 119, sig_id 2
 
