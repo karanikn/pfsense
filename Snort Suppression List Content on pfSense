@@ -1,0 +1,33 @@
+## Snort Suppression List Content on pfSense
+## by Nikolaos Karanikolas
+#
+## This list is a represents a compromise between security and usability.
+# February 2020 
+#
+
+#(http_inspect) HTTP RESPONSE HAS UTF CHARSET WHICH FAILED TO NORMALIZE
+suppress gen_id 120, sig_id 4
+
+#(http_inspect) INVALID CONTENT-LENGTH OR CHUNK SIZE
+suppress gen_id 120, sig_id 8
+
+#(http_inspect) PROTOCOL-OTHER HTTP server response before client request 
+suppress gen_id 120, sig_id 18
+
+#(http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE
+suppress gen_id 120, sig_id 3
+
+#(http_inspect) BARE BYTE UNICODE ENCODING
+suppress gen_id 119, sig_id 4
+
+#(http_inspect) IIS UNICODE CODEPOINT ENCODING
+suppress gen_id 119, sig_id 7
+
+#(http_inspect) UNESCAPED SPACE IN HTTP URI
+suppress gen_id 119, sig_id 33
+
+#(portscan) UDP Filtered Portscan
+suppress gen_id 122, sig_id 21
+
+#(http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE
+suppress gen_id 120, sig_id 3
