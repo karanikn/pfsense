@@ -47,3 +47,15 @@ suppress gen_id 122, sig_id 22
 
 #(portscan) UDP Filtered Portsweep
 suppress gen_id 122, sig_id 23
+
+#(spp_sip) Content length mismatch
+suppress gen_id 140, sig_id 18
+
+#(spp_sip) URI is too long
+suppress gen_id 140, sig_id 3
+
+#(spp_sip) Empty call-Id
+suppress gen_id 140, sig_id 4
+
+#(spp_sip) Empty Via header
+suppress gen_id 140, sig_id 12
