@@ -30,6 +30,9 @@ suppress gen_id 120, sig_id 3
 #(http_inspect) HTTP RESPONSE HAS UTF CHARSET WHICH FAILED TO NORMALIZE
 suppress gen_id 120, sig_id 4
 
+#(http_inspect) HTTP RESPONSE GZIP DECOMPRESSION FAILED
+suppress gen_id 120, sig_id 6
+
 #(http_inspect) INVALID CONTENT-LENGTH OR CHUNK SIZE
 suppress gen_id 120, sig_id 8
 
@@ -59,3 +62,6 @@ suppress gen_id 140, sig_id 4
 
 #(spp_sip) Empty Via header
 suppress gen_id 140, sig_id 12
+
+#ET SCAN Potential SSH Scan OUTBOUND
+suppress gen_id 1, sig_id 2003068
