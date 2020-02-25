@@ -65,3 +65,9 @@ suppress gen_id 140, sig_id 12
 
 #ET SCAN Potential SSH Scan OUTBOUND
 suppress gen_id 1, sig_id 2003068
+
+#(spp_ssh) Challenge-Response Overflow exploit
+suppress gen_id 128, sig_id 1
+
+#ET POLICY PE EXE or DLL Windows file download HTTP
+suppress gen_id 1, sig_id 2018959
