@@ -5,7 +5,6 @@
 ## Correction for Webserfing & OpenVPN 
 ## February 2020 
 
-
 #(http_inspect) DOUBLE DECODING ATTACK
 suppress gen_id 119, sig_id 2
 
