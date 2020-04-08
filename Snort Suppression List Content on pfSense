@@ -3,7 +3,7 @@
 #
 ## This list is a represents a compromise between security and usability.
 ## Correction for Webserfing & OpenVPN 
-## February 2020 
+## April 2020 
 
 #(http_inspect) DOUBLE DECODING ATTACK
 suppress gen_id 119, sig_id 2
@@ -70,3 +70,17 @@ suppress gen_id 128, sig_id 1
 
 #ET POLICY PE EXE or DLL Windows file download HTTP
 suppress gen_id 1, sig_id 2018959
+#ET SCAN Sipvicious User-Agent Detected (friendly-scanner)
+suppress gen_id 1, sig_id 2011716
+
+#(portscan) UDP Filtered Distributed Portscan
+suppress gen_id 122, sig_id 24
+
+#ET SCAN Sipvicious Scan
+suppress gen_id 1, sig_id 2008578
+
+#ET POLICY Vulnerable Java Version 1.8.x Detected
+suppress gen_id 1, sig_id 2019401
+
+#(spp_ssl) Invalid Client HELLO after Server HELLO Detected
+suppress gen_id 137, sig_id 1
