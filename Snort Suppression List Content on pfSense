@@ -23,6 +23,9 @@ suppress gen_id 119, sig_id 31
 #(http_inspect) POST W/O CONTENT-LENGTH OR CHUNKS
 suppress gen_id 119, sig_id 28
 
+#(http_inspect) SIMPLE REQUEST
+suppress gen_id 119, sig_id 32
+
 #(http_inspect) UNESCAPED SPACE IN HTTP URI
 suppress gen_id 119, sig_id 33
 
