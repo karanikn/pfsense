@@ -96,3 +96,6 @@ suppress gen_id 1, sig_id 2008578
 
 #ET POLICY Vulnerable Java Version 1.8.x Detected
 suppress gen_id 1, sig_id 2019401
+
+#(spp_frag3) Fragmentation overlap
+suppress gen_id 123, sig_id 8
