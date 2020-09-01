@@ -100,3 +100,9 @@ suppress gen_id 140, sig_id 4
 
 #(spp_sip) Empty Via header
 suppress gen_id 140, sig_id 12
+
+#(ftp_telnet) Invalid FTP Command
+suppress gen_id 125, sig_id 2
+
+#(ftp_telnet) Evasive (incomplete) TELNET CMD on FTP Command Channel
+suppress gen_id 125, sig_id 9
