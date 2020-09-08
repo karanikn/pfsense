@@ -3,25 +3,7 @@
 #
 ## This list is a represents a compromise between security and usability.
 ## Correction for Webserfing & OpenVPN 
-## Jun 2020 
-
-#ET SCAN Potential SSH Scan OUTBOUND
-suppress gen_id 1, sig_id 2003068
-
-#(spp_ssh) Challenge-Response Overflow exploit
-suppress gen_id 128, sig_id 1
-
-#ET POLICY PE EXE or DLL Windows file download HTTP
-suppress gen_id 1, sig_id 2018959
-
-#ET SCAN Sipvicious User-Agent Detected (friendly-scanner)
-suppress gen_id 1, sig_id 2011716
-
-#ET SCAN Sipvicious Scan
-suppress gen_id 1, sig_id 2008578
-
-#ET POLICY Vulnerable Java Version 1.8.x Detected
-suppress gen_id 1, sig_id 2019401
+## February 2020 
 
 #(http_inspect) DOUBLE DECODING ATTACK
 suppress gen_id 119, sig_id 2
@@ -38,12 +20,6 @@ suppress gen_id 119, sig_id 33
 #(http_inspect) UNKNOWN METHOD
 suppress gen_id 119, sig_id 31
 
-#(http_inspect) POST W/O CONTENT-LENGTH OR CHUNKS
-suppress gen_id 119, sig_id 28
-
-#(http_inspect) SIMPLE REQUEST
-suppress gen_id 119, sig_id 32
-
 #(http_inspect) UNESCAPED SPACE IN HTTP URI
 suppress gen_id 119, sig_id 33
 
@@ -59,14 +35,8 @@ suppress gen_id 120, sig_id 6
 #(http_inspect) INVALID CONTENT-LENGTH OR CHUNK SIZE
 suppress gen_id 120, sig_id 8
 
-#(http_inspect) JAVASCRIPT WHITESPACES EXCEEDS MAX ALLOWED
-suppress gen_id 120, sig_id 10
-
 #(http_inspect) PROTOCOL-OTHER HTTP server response before client request 
 suppress gen_id 120, sig_id 18
-
-#(http_inspect) INVALID CHUNK SIZE OR CHUNK SIZE FOLLOWED BY JUNK CHARACTERS
-suppress gen_id 120, sig_id 28
 
 #(portscan) TCP Portsweep
 suppress gen_id 122, sig_id 3
@@ -80,15 +50,6 @@ suppress gen_id 122, sig_id 22
 #(portscan) UDP Filtered Portsweep
 suppress gen_id 122, sig_id 23
 
-#(portscan) UDP Filtered Distributed Portscan
-suppress gen_id 122, sig_id 24
-
-#(spp_frag3) Fragmentation overlap
-suppress gen_id 123, sig_id 8
-
-#(spp_ssl) Invalid Client HELLO after Server HELLO Detected
-suppress gen_id 137, sig_id 1
-
 #(spp_sip) Content length mismatch
 suppress gen_id 140, sig_id 18
 
@@ -101,8 +62,44 @@ suppress gen_id 140, sig_id 4
 #(spp_sip) Empty Via header
 suppress gen_id 140, sig_id 12
 
+#ET SCAN Potential SSH Scan OUTBOUND
+suppress gen_id 1, sig_id 2003068
+
+#(spp_ssh) Challenge-Response Overflow exploit
+suppress gen_id 128, sig_id 1
+
+#ET POLICY PE EXE or DLL Windows file download HTTP
+suppress gen_id 1, sig_id 2018959
+#ET SCAN Sipvicious User-Agent Detected (friendly-scanner)
+suppress gen_id 1, sig_id 2011716
+
+#(portscan) UDP Filtered Distributed Portscan
+suppress gen_id 122, sig_id 24
+
+#ET SCAN Sipvicious Scan
+suppress gen_id 1, sig_id 2008578
+
+#ET POLICY Vulnerable Java Version 1.8.x Detected
+suppress gen_id 1, sig_id 2019401
+
+#(spp_ssl) Invalid Client HELLO after Server HELLO Detected
+suppress gen_id 137, sig_id 1
+
+#(http_inspect) INVALID CHUNK SIZE OR CHUNK SIZE FOLLOWED BY JUNK CHARACTERS
+suppress gen_id 120, sig_id 28
+
+#(http_inspect) JAVASCRIPT WHITESPACES EXCEEDS MAX ALLOWED
+suppress gen_id 120, sig_id 10
+
+#(http_inspect) POST W/O CONTENT-LENGTH OR CHUNKS
+suppress gen_id 119, sig_id 28
+
 #(ftp_telnet) Invalid FTP Command
 suppress gen_id 125, sig_id 2
 
 #(ftp_telnet) Evasive (incomplete) TELNET CMD on FTP Command Channel
 suppress gen_id 125, sig_id 9
+
+#ET SCAN Suspicious inbound to MSSQL port 1433
+# outlook.com
+suppress gen_id 1, sig_id 2010935
