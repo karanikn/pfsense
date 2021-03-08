@@ -39,6 +39,9 @@ suppress gen_id 119, sig_id 4
 #(http_inspect) IIS UNICODE CODEPOINT ENCODING
 suppress gen_id 119, sig_id 7
 
+#(http_inspect) WEBROOT DIRECTORY TRAVERSAL
+suppress gen_id 119, sig_id 18
+
 #(http_inspect) POST W/O CONTENT-LENGTH OR CHUNKS
 suppress gen_id 119, sig_id 28
 
@@ -77,6 +80,9 @@ suppress gen_id 122, sig_id 1
 
 #(portscan) TCP Portsweep
 suppress gen_id 122, sig_id 3
+
+#(portscan) UDP Decoy Portscan
+suppress gen_id 122, sig_id 18
 
 #(portscan) UDP Filtered Portscan
 suppress gen_id 122, sig_id 21
