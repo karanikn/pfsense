@@ -134,7 +134,6 @@ client.wns.windows.com
 wdcp.microsoft.com
 dns.msftncsi.com
 storeedgefd.dsx.mp.microsoft.com
-# login.live.com ## Block Skype
 wdcpalt.microsoft.com
 settings-ssl.xboxlive.com
 settings-ssl.xboxlive.com-c.edgekey.net
@@ -179,15 +178,17 @@ watson.ppe.telemetry.microsoft.com
 watson.telemetry.microsoft.com,
 watson.telemetry.microsoft.com.nsatc.net
 wes.df.telemetry.microsoft.com
+## Block Skype
+# login.live.com
 # can cause issues with Skype
-ui.skype.com
+# ui.skype.com
 # can cause issues with Skype
-pricelist.skype.com
+# pricelist.skype.com
 # can cause issues with Skype 
-apps.skype.com
-m.hotmail.com
+# apps.skype.com
+# m.hotmail.com
 # can cause issues with Skype
-s.gateway.messenger.live.com
+# s.gateway.messenger.live.com
 #Extras
 vortex.data.microsoft.com
 vortex-win.data.microsoft.com
